@@ -42,6 +42,11 @@ print("Book types: ", Book.get_book_types())
 b1 = Book("Title 1", "HARDCOVER")
 b2 = Book("Title 2", "PAPERBACK")
 
+b3 = Book("Title 3", "HARDCOVER")
+print(b3.title)
+b3.set_title("New")
+print(b3.title)
+
 # TODO: Use the static method to access a singleton object
 thebooks = Book.get_booklist()
 thebooks.append(b1)
